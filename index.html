@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Joshua</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Joshua</h1>
+                <p class="hero-subtitle">Full-Stack Developer & Creative Problem Solver</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'});">View My Work</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Get In Touch</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Lake Tahoe" class="hero-tahoe-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Passionate developer who loves turning ideas into reality</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Story</h3>
+                    <p>I'm a full-stack developer with a passion for creating beautiful, functional, and user-friendly applications. I love solving complex problems and turning innovative ideas into reality through code. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>25+</h4>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat">
+                            <h4>3+</h4>
+                            <p>Years Coding</p>
+                        </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Lake Tahoe Mountains" class="about-tahoe-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive and interactive user interfaces with modern frameworks and best practices.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">React</span>
+                        <span class="feature-tag">Vue.js</span>
+                        <span class="feature-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Building robust server-side applications and APIs with scalable architectures.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Node.js</span>
+                        <span class="feature-tag">Python</span>
+                        <span class="feature-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Developing cross-platform mobile applications for iOS and Android devices.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">React Native</span>
+                        <span class="feature-tag">Flutter</span>
+                        <span class="feature-tag">Swift</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing beautiful and intuitive user experiences with modern design tools.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Figma</span>
+                        <span class="feature-tag">Adobe XD</span>
+                        <span class="feature-tag">Prototyping</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>DevOps & Cloud</h3>
+                    <p>Deploying and managing applications in the cloud with modern DevOps practices.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">AWS</span>
+                        <span class="feature-tag">Docker</span>
+                        <span class="feature-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Design</h3>
+                    <p>Designing and optimizing database structures for efficient data management.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">PostgreSQL</span>
+                        <span class="feature-tag">MongoDB</span>
+                        <span class="feature-tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p>Some of the projects I've built and worked on</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Personal Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Personal Portfolio Website</h3>
+                                <p>Modern, responsive personal website built with HTML, CSS, and JavaScript</p>
+                                <div class="portfolio-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#" class="portfolio-link" target="_blank" rel="noopener">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Task Manager">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Task Management App</h3>
+                                <p>Full-stack task management application with user authentication</p>
+                                <div class="portfolio-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <a href="#" class="portfolio-link" target="_blank" rel="noopener">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Weather App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Weather Forecast App</h3>
+                                <p>Cross-platform weather app with real-time data and location services</p>
+                                <div class="portfolio-tech">
+                                    <span>React Native</span>
+                                    <span>Weather API</span>
+                                    <span>Geolocation</span>
+                                </div>
+                                <a href="#" class="portfolio-link" target="_blank" rel="noopener">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="E-Commerce">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Online shopping platform with payment integration and admin dashboard</p>
+                                <div class="portfolio-tech">
+                                    <span>Vue.js</span>
+                                    <span>Express.js</span>
+                                    <span>Stripe</span>
+                                </div>
+                                <a href="#" class="portfolio-link" target="_blank" rel="noopener">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="UI Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Mobile App UI Design</h3>
+                                <p>Complete UI/UX design for a fitness tracking mobile application</p>
+                                <div class="portfolio-tech">
+                                    <span>Figma</span>
+                                    <span>Prototyping</span>
+                                    <span>User Research</span>
+                                </div>
+                                <a href="#" class="portfolio-link" target="_blank" rel="noopener">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Blog Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Blog Platform</h3>
+                                <p>Content management system with markdown support and SEO optimization</p>
+                                <div class="portfolio-tech">
+                                    <span>Next.js</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Prisma</span>
+                                </div>
+                                <a href="#" class="portfolio-link" target="_blank" rel="noopener">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Blog</h2>
+                <p>Thoughts on coding, design, and technology</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="React Hooks">
+                        <div class="blog-category">Development</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span class="blog-author"><i class="far fa-user"></i> Joshua</span>
+                        </div>
+                        <h3>Mastering React Hooks: A Deep Dive</h3>
+                        <p>Exploring the power of React Hooks and how they've revolutionized functional components...</p>
+                        <a href="#" class="blog-link" target="_blank" rel="noopener">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="CSS Grid">
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> March 12, 2024</span>
+                            <span class="blog-author"><i class="far fa-user"></i> Joshua</span>
+                        </div>
+                        <h3>CSS Grid vs Flexbox: When to Use What</h3>
+                        <p>A practical guide to choosing between CSS Grid and Flexbox for different layout scenarios...</p>
+                        <a href="#" class="blog-link" target="_blank" rel="noopener">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="TypeScript">
+                        <div class="blog-category">Development</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> March 10, 2024</span>
+                            <span class="blog-author"><i class="far fa-user"></i> Joshua</span>
+                        </div>
+                        <h3>Why TypeScript is Worth Learning in 2024</h3>
+                        <p>My journey with TypeScript and why I think every JavaScript developer should consider it...</p>
+                        <a href="#" class="blog-link" target="_blank" rel="noopener">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Interested in working together? Let's connect!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>joshterranova26@gmail.com</p>
+                            <p>jjt_373@usc.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (818)-515-9043</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Burbank, Los Angeles, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/joshua-terranova-90b5122ab" target="_blank" rel="noopener">linkedin.com/in/joshua-terranova-90b5122ab</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://instagram.com/jnewland101" target="_blank" rel="noopener">@jnewland101</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/thatrandomasiandev" target="_blank" rel="noopener">github.com/thatrandomasiandev</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Joshua</h3>
+                    <p>Full-stack developer passionate about creating amazing digital experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/joshua-terranova-90b5122ab" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/jnewland101" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/thatrandomasiandev" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Joshua Terranova. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
