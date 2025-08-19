@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Terranova - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .resume-page {
+            background: white;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .resume-header {
+            text-align: center;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .resume-header h1 {
+            font-size: 2.5rem;
+            color: #ff6b35;
+            margin-bottom: 0.5rem;
+        }
+        
+        .resume-header p {
+            font-size: 1.1rem;
+            color: #666;
+            margin: 0.25rem 0;
+        }
+        
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+        
+        .resume-section h2 {
+            color: #ff6b35;
+            border-bottom: 2px solid #ff6b35;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .resume-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .resume-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .resume-item .company {
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .resume-item .date {
+            color: #888;
+            font-style: italic;
+        }
+        
+        .resume-item ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .resume-item li {
+            margin-bottom: 0.25rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category h3 {
+            color: #ff6b35;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skill-category li {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: #ff6b35;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid #ff6b35;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-links a:hover {
+            background: #ff6b35;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+        
+        @media print {
+            body { margin: 0; }
+            .resume-page { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-page">
+        <!-- Header -->
+        <div class="resume-header">
+            <h1>Joshua Terranova</h1>
+            <p>Computer Science Student</p>
+            <p>University of Southern California</p>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> joshterranova26@gmail.com</span>
+                <span><i class="fas fa-phone"></i> (818) 515-9043</span>
+                <span><i class="fas fa-map-marker-alt"></i> Burbank, Los Angeles, CA</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/joshua-terranova-90b5122ab" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/jnewland101" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/thatrandomasiandev" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+            <h2>Education</h2>
+            <div class="resume-item">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="company">University of Southern California (USC)</p>
+                <p class="date">Expected Graduation: 2028</p>
+                <p>Undergraduate Computer Science Program</p>
+            </div>
+            <div class="resume-item">
+                <h3>Associate of Science in Mathematics and Physics</h3>
+                <p class="company">Los Angeles Mission College (LAMC)</p>
+                <p class="date">Graduated: 2025</p>
+            </div>
+            <div class="resume-item">
+                <h3>Center for Talented Youth</h3>
+                <p class="company">Johns Hopkins University</p>
+                <p class="date">Mathematics/Science Program</p>
+            </div>
+            <div class="resume-item">
+                <h3>High School Diploma</h3>
+                <p class="company">Graduated 2024</p>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="resume-section">
+            <h2>Internships/Experience</h2>
+            <div class="resume-item">
+                <h3>NASA NCAS Mission 1 Intern (Jan 2025)</h3>
+                <p class="company">NASA</p>
+                <p class="date">Intern/Researcher</p>
+            </div>
+            <div class="resume-item">
+                <h3>NASA NCAS Mission 2 Intern</h3>
+                <p class="company">NASA</p>
+                <p class="date">Lead Researcher/Computer Engineer (ARMD Directorate)</p>
+                <p class="date">Ended: June 2025</p>
+            </div>
+            <div class="resume-item">
+                <h3>NASA NCAS Mission 3 Intern</h3>
+                <p class="company">NASA</p>
+                <p class="date">Computer Engineering Intern</p>
+                <p class="date">Ended: July 2025</p>
+            </div>
+            <div class="resume-item">
+                <h3>NASA L'SPACE NPWEE Intern</h3>
+                <p class="company">NASA</p>
+                <p class="date">Primary Computer Engineer/PI (Project Investigator)</p>
+                <p class="date">Secondary Computer Engineer/PM (Project Manager)</p>
+                <p class="date">Decision Panel Reviewer/Judge</p>
+                <p class="date">Ended: August 2025</p>
+            </div>
+            <div class="resume-item">
+                <h3>NASA L'SPACE MCA Intern</h3>
+                <p class="company">NASA</p>
+                <p class="date">Computer Engineering Intern</p>
+                <p class="date">In Progress</p>
+            </div>
+            <div class="resume-item">
+                <h3>Toyota Material Handling Intern</h3>
+                <p class="company">Toyota</p>
+                <p class="date">Computer-Aided Design Analyst for Forklift Attachments</p>
+                <p class="date">Ended: February 2025</p>
+            </div>
+            <div class="resume-item">
+                <h3>Autodesk Digital Design Competition (Fusion360/AutoCAD)</h3>
+                <p class="company">Autodesk</p>
+                <p class="date">Participant in Autodesk Digital Design tasked with designing the most efficient way of lifting various objects with machinery.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Semifinalist in CyberPatriots CyberSecurity Competition</h3>
+                <p class="company">CyberPatriots</p>
+                <p class="date">National cybersecurity competition</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="resume-section">
+            <h2>Recent Projects</h2>
+            <div class="resume-item">
+                <h3>Personal Website</h3>
+                <p class="company">thatrandomasiandev.github.io/website</p>
+                <p>Developed and published my own personal website showcasing portfolio and skills</p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="resume-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>CAD & Design Software</h3>
+                    <ul>
+                        <li>Fusion360 CAD</li>
+                        <li>AutoCAD</li>
+                        <li>Siemens NX</li>
+                        <li>JMARS</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li>Technical Writing</li>
+                        <li>Proposal Writing</li>
+                        <li>Teaming & Communication</li>
+                        <li>Applied Physics</li>
+                        <li>Applied Mathematics</li>
+                        <li>Upper-Level Math</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications & Awards -->
+        <div class="resume-section">
+            <h2>Competitions & Achievements</h2>
+            <div class="resume-item">
+                <h3>Autodesk Digital Design Competition</h3>
+                <p class="company">Fusion360/AutoCAD</p>
+                <p>Participant in Autodesk Digital Design tasked with designing the most efficient way of lifting various objects with machinery.</p>
+            </div>
+            <div class="resume-item">
+                <h3>CyberPatriots CyberSecurity Competition</h3>
+                <p class="company">Semifinalist</p>
+                <p>National cybersecurity competition participant and semifinalist.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
